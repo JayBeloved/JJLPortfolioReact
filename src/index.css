@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #34d399;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* Code font */
+.code-font {
+  font-family: 'Fira Code', 'Monaco', 'Cascadia Code', 'Roboto Mono', monospace;
+}
+
+/* Skill pills - TEMPORARY FIX */
+.skill-pill {
+  @apply inline-block bg-emerald-500 bg-opacity-20 text-emerald-300 px-3 py-1 rounded-full text-sm border border-emerald-500 border-opacity-30;
+}
+
+/* Terminal styles */
+.terminal {
+  border-radius: 0.5rem;
+  background-color: #1e293b;
+  overflow: hidden;
+  border: 1px solid #334155;
+}
+
+.terminal-header {
+  background-color: #334155;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.terminal-red { background-color: #ef4444; }
+.terminal-yellow { background-color: #eab308; }
+.terminal-green { background-color: #22c55e; }
+
+.terminal-body {
+  padding: 1rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.terminal-prompt {
+  color: #64748b;
+}
+
+/* Syntax highlighting */
+.syntax-keyword { color: #f472b6; }
+.syntax-string { color: #34d399; }
+.syntax-number { color: #fbbf24; }
+.syntax-function { color: #60a5fa; }
+.syntax-variable { color: #a78bfa; }
+.syntax-comment { color: #64748b; }
+
+/* Button glow effect */
+.glow-button {
+  transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 20px rgba(52, 211, 153, 0.6);
+  transform: translateY(-2px);
+}
