@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import profile from "../assets/img/profile3.jpg" 
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -81,7 +82,7 @@ const About = () => {
               <div className="relative">
                 <div className="relative z-10 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl p-8 backdrop-blur-sm border border-blue-500/20">
                   <img 
-                    src="/src/assets/img/profile3.jpg" 
+                    src={profile}
                     alt="John J. Lawal" 
                     className="w-auto h-81 rounded-xl"
                   />

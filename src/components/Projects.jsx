@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from 'react'
+import crane from '../assets/img/portfolio/crane.png'
+import sps from '../assets/img/portfolio/smartpayslip.png'
+import andl from '../assets/img/portfolio/andl.png'
+import delegates from '../assets/img/portfolio/delegates.png'
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -29,8 +33,8 @@ const Projects = () => {
       category: "Business Consulting",
       description: "CEO & Lead Consultant. Driving growth through data-driven research and strategic consulting.",
       longDescription: "As CEO and Lead Consultant of Crane JLA Consults, I drive organizational growth through comprehensive data-driven research and strategic consulting. Currently developing a proprietary web application that will revolutionize academic data generation, making research more accessible and efficient for educational institutions.",
-      image: "/src/assets/img/portfolio/cares.png",
-      technologies: ["Python", "Django", "Data Analytics", "Business Intelligence"],
+      image: {crane},
+      technologies: ["Python", "Django", "Data Analytics", "Business Intelligence", "SPSS", "EViews", "SmartPLS"],
       features: [
         "Strategic Business Consulting",
         "Data-Driven Research Solutions",
@@ -43,35 +47,35 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "ThinkTechNow Global (TTN)",
-      category: "Personal Brand",
-      description: "Founder. Building a platform for blog, portfolio, and innovative productivity tools.",
-      longDescription: "ThinkTechNow Global serves as my personal brand and the future home of johnjaylawal.com. This comprehensive platform integrates my blog, portfolio, and innovative productivity tools, all built using cutting-edge React and Django technologies to deliver exceptional user experiences.",
-      image: "/src/assets/img/portfolio/tms.jpg",
-      technologies: ["React", "Django", "PostgreSQL", "AWS"],
+      title: "SmartPay Slip",
+      category: "Finance & Payroll",
+      description: "Automated payroll management system with integrated tax calculations and financial reporting capabilities.",
+      longDescription: "Automated payroll management system with integrated tax calculations and financial reporting capabilities. Built for a seamless payroll experience, ensuring accuracy and compliance for businesses of all sizes.",
+      image: {sps},
+      technologies: ["Boostrap", "Django", "PostgreSQL", "DigitalOcean"],
       features: [
-        "Personal Brand Platform",
-        "Integrated Blog System",
-        "Portfolio Showcase",
-        "Productivity Tools Suite"
+        "Employee Payroll Management",
+        "Automated Tax Calculations",
+        "Financial Reporting Tools",
+        "User-Friendly Interface"
       ],
-      status: "In Development",
-      link: "#",
+      status: "Ongoing",
+      link: "https://smartpayslip.online",
       github: "#"
     },
     {
       id: 3,
-      title: "UNCaved Web Builder",
-      category: "SaaS Platform",
-      description: "Co-Founder. Innovating in web development with next-generation website builder.",
-      longDescription: "As Co-Founder of UNCaved (formerly New Digital), I'm pioneering innovation in the web development space with a next-generation website builder that empowers users to create professional websites without coding knowledge, while maintaining the flexibility for advanced customization.",
-      image: "/src/assets/img/portfolio/uncaved.png",
-      technologies: ["React", "Node.js", "MongoDB", "WebRTC"],
+      title: "RUIMUN Delegates Management System (DMS)",
+      category: "Saas Platform",
+      description: "Event management solution for handling delegate registrations, assignments, and conference attendance.",
+      longDescription: "Event management solution for handling delegate registrations, assignments, and conference attendance. ",
+      image: {delegates},
+      technologies: ["Bootstrap", "Django", "PostgreSQL", "DigitalOcean"],
       features: [
-        "Drag & Drop Builder",
-        "Real-time Collaboration",
-        "Advanced Customization",
-        "Multi-user Management"
+        "Delegate Registration & Management",
+        "Delegates Database Management",
+        "Committee Assignments",
+        "Payment Verification System"
       ],
       status: "Beta",
       link: "#",
@@ -79,20 +83,20 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "Service & Leadership Portfolio",
-      category: "Community Impact",
+      title: "Apostle Niyi Digital Library",
+      category: "Community Service",
       description: "Commitment to service through ICT leadership and digital library support.",
-      longDescription: "Demonstrating my commitment to service and community impact through various leadership roles including ICT Director for RUIMUN'26 and providing technical support for the Apostle Niyi Digital Library, fostering educational advancement and technological literacy.",
-      image: "/src/assets/img/portfolio/delegates.png",
+      longDescription: "Demonstrating my commitment to service and community impact through various leadership roles including development and providing technical support for the Apostle Niyi Digital Library, fostering educational advancement and technological literacy.",
+      image: {andl},
       technologies: ["Digital Strategy", "IT Infrastructure", "Project Management"],
       features: [
-        "ICT Leadership (RUIMUN'26)",
-        "Digital Library Support",
-        "Educational Technology",
-        "Community Development"
+        "CMS Development & Maintenance",
+        "IT Infrastructure Support",
+        "Web Development",
+        "Content Management"
       ],
-      status: "Ongoing",
-      link: "#",
+      status: "Beta",
+      link: "https://apostleniyi.org",
       github: "#"
     }
   ]

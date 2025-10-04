@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import postImage from "../assets/img/Logo_main_New.png"
 
 const BlogPreview = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -29,7 +30,7 @@ const BlogPreview = () => {
       category: "Data Science",
       readTime: "8 min read",
       date: "Coming Soon",
-      image: "/src/assets/img/portfolio/bg_1.png",
+      image: {postImage},
       tags: ["Data Analytics", "AI", "Business Growth", "Africa"]
     },
     {
@@ -39,7 +40,7 @@ const BlogPreview = () => {
       category: "Web Development",
       readTime: "12 min read", 
       date: "Coming Soon",
-      image: "/src/assets/img/portfolio/smartpayslip.png",
+      image: {postImage},
       tags: ["Django", "React", "Web Development", "Scalability"]
     }
   ]
