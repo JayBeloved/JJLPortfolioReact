@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 import LoadingAnimation from './components/LoadingAnimation'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'

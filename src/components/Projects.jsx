@@ -33,7 +33,7 @@ const Projects = () => {
       category: "Business Consulting",
       description: "CEO & Lead Consultant. Driving growth through data-driven research and strategic consulting.",
       longDescription: "As CEO and Lead Consultant of Crane JLA Consults, I drive organizational growth through comprehensive data-driven research and strategic consulting. Currently developing a proprietary web application that will revolutionize academic data generation, making research more accessible and efficient for educational institutions.",
-      image: {crane},
+      image: crane,
       technologies: ["Python", "Django", "Data Analytics", "Business Intelligence", "SPSS", "EViews", "SmartPLS"],
       features: [
         "Strategic Business Consulting",
@@ -51,7 +51,7 @@ const Projects = () => {
       category: "Finance & Payroll",
       description: "Automated payroll management system with integrated tax calculations and financial reporting capabilities.",
       longDescription: "Automated payroll management system with integrated tax calculations and financial reporting capabilities. Built for a seamless payroll experience, ensuring accuracy and compliance for businesses of all sizes.",
-      image: {sps},
+      image: sps,
       technologies: ["Boostrap", "Django", "PostgreSQL", "DigitalOcean"],
       features: [
         "Employee Payroll Management",
@@ -69,7 +69,7 @@ const Projects = () => {
       category: "Saas Platform",
       description: "Event management solution for handling delegate registrations, assignments, and conference attendance.",
       longDescription: "Event management solution for handling delegate registrations, assignments, and conference attendance. ",
-      image: {delegates},
+      image: delegates,
       technologies: ["Bootstrap", "Django", "PostgreSQL", "DigitalOcean"],
       features: [
         "Delegate Registration & Management",
@@ -87,7 +87,7 @@ const Projects = () => {
       category: "Community Service",
       description: "Commitment to service through ICT leadership and digital library support.",
       longDescription: "Demonstrating my commitment to service and community impact through various leadership roles including development and providing technical support for the Apostle Niyi Digital Library, fostering educational advancement and technological literacy.",
-      image: {andl},
+      image: andl,
       technologies: ["Digital Strategy", "IT Infrastructure", "Project Management"],
       features: [
         "CMS Development & Maintenance",

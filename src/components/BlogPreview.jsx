@@ -30,7 +30,7 @@ const BlogPreview = () => {
       category: "Data Science",
       readTime: "8 min read",
       date: "Coming Soon",
-      image: {postImage},
+      image: postImage,
       tags: ["Data Analytics", "AI", "Business Growth", "Africa"]
     },
     {
@@ -40,7 +40,7 @@ const BlogPreview = () => {
       category: "Web Development",
       readTime: "12 min read", 
       date: "Coming Soon",
-      image: {postImage},
+      image: postImage,
       tags: ["Django", "React", "Web Development", "Scalability"]
     }
   ]
