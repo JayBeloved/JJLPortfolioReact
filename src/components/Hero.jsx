@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import bg from '../assets/img/bg_hero.png'
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -18,16 +19,18 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-800 via-blue-500/20 to-gray-900">
       
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.3) 1px, transparent 0)`,
-          backgroundSize: '50px 50px'
-        }}></div>
-      </div>
+      {/* Background Image with Dark Gradient Overlay */}
+        <div className="absolute inset-0">
+          <img 
+            src={bg} 
+            alt="Background" 
+            className="w-full h-full object-cover" 
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900/80 to-black opacity-95"></div>
+        </div>
 
-      {/* Floating Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Floating Elements */}
+      {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(5)].map((_, i) => (
           <div
             key={i}
@@ -40,7 +43,7 @@ const Hero = () => {
             }}
           />
         ))}
-      </div>
+      </div> */}
 
       <div className="container mx-auto px-4 lg:px-8 text-center z-10">
         <div className={`max-w-5xl mx-auto transition-all duration-1000 ${
