@@ -96,7 +96,7 @@ const Projects = () => {
         "Content Management"
       ],
       status: "Beta",
-      link: "https://apostleniyi.org",
+      link: "https://niyimakinde.com",
       github: "#"
     }
   ]
