@@ -77,13 +77,20 @@ const Services = () => {
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <img src={service.image} alt={service.title} className="w-full h-48 object-cover" />
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-400 leading-relaxed">
-                    {service.description}
-                  </p>
+                <div className="p-6 flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-400 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
+                  <div className="mt-4">
+                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                        Explore
+                    </button>
+                  </div>
                 </div>
               </a>
             ))}

@@ -83,13 +83,20 @@ const IdeasSection = () => {
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 <img src={idea.image} alt={idea.title} className="w-full h-48 object-cover" />
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold text-white mb-3">
-                    {idea.title}
-                  </h3>
-                  <p className="text-gray-400 leading-relaxed">
-                    {idea.description}
-                  </p>
+                <div className="p-6 flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-3">
+                      {idea.title}
+                    </h3>
+                    <p className="text-gray-400 leading-relaxed">
+                      {idea.description}
+                    </p>
+                  </div>
+                  <div className="mt-4">
+                    <button className="border border-gray-600 hover:border-blue-500 text-gray-300 hover:text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                        Learn More
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
