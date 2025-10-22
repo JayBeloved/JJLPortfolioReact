@@ -1,13 +1,9 @@
 
 import React, { useState, useEffect } from 'react'
-import crane from '../assets/img/portfolio/crane.png'
 import sps from '../assets/img/portfolio/smartpayslip.png'
 import andl from '../assets/img/portfolio/andl.png'
 import delegates from '../assets/img/portfolio/delegates.png'
-import uncaved from '../assets/img/portfolio/uncaved.png'
-import tms from '../assets/img/portfolio/tms.jpg'
-import cares from '../assets/img/portfolio/cares.png'
-import bg1 from '../assets/img/portfolio/bg_1.png'
+import techImage from '../assets/img/portfolio/techImage.png'
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -77,7 +73,7 @@ const Projects = () => {
         category: "Web Platform",
         description: "A professional networking platform connecting fresh Nigerian graduates with recruiters and organizations.",
         longDescription: "NaijaGrad is a talent discovery platform designed to bridge the gap between Nigerian graduates and the job market. It empowers graduates to create detailed professional profiles, build a web presence, and showcase their skills. For recruiters, NaijaGrad serves as a curated talent pool with advanced search and filtering capabilities. Future plans include AI-powered SEO for profiles and API integrations with major job portals.",
-        image: bg1,
+        image: techImage,
         technologies: ["React", "Django", "PostgreSQL", "DigitalOcean", "AI/ML"],
         features: ["Graduate Profile Builder", "Recruiter Search & Filter", "AI-Powered SEO Optimization", "Job Board API Integration"],
         status: "In Progress",
@@ -90,7 +86,7 @@ const Projects = () => {
         category: "AI & SaaS",
         description: "An AI-powered content adaptation tool that allows readers to choose how they consume articles and blog posts.",
         longDescription: "Sympleefied is an innovative SaaS platform that uses AI to transform a single piece of content into multiple formats (e.g., long-form, summary, bullet points). This allows website visitors to select their preferred reading style, dramatically increasing engagement and accessibility. The underlying AI is trained on general writing and creativity principles, ensuring high-quality output for any article or blog.",
-        image: tms,
+        image: techImage,
         technologies: ["React", "Python (AI/ML)", "Django", "SaaS Architecture"],
         features: ["AI-Driven Content Summarization", "Multiple Reading Mode Generation", "Seamless Website Integration", "User-Centric Reading Experience"],
         status: "In Progress",
@@ -103,7 +99,7 @@ const Projects = () => {
         category: "Personal Brand Ecosystem",
         description: "A digital ecosystem designed to deliver immense value through technology, education, and leadership content.",
         longDescription: "10xb is the digital embodiment of the John J. Lawal personal brand. It's an integrated platform that serves curated content, structured learning paths, and practical resources to four key audiences: personal development seekers, SMEs, students, and institutions. The platform features a rich library of toolkits, templates, micro-apps, and courses designed to solve specific problems and foster growth.",
-        image: cares,
+        image: techImage,
         technologies: ["React", "Django", "Next.js", "Headless CMS", "LMS Integration"],
         features: ["Curated Learning Paths", "SME Resource Library & Toolkits", "Micro-app & Template Marketplace", "Expertise Showcase for Institutions"],
         status: "In Progress",
