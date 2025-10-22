@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import studentImage from '../assets/comet/comet-header (1).png';
-import useCase from '../assets/comet/use_case.png';
+import useCase from '../assets/comet/use-case.png';
 import pitchDeckImage from '../assets/comet/pitch_deck.png';
 
 const CometPage = () => {
