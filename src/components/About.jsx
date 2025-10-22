@@ -45,7 +45,7 @@ const About = () => {
             }`}>
               <div className="prose prose-lg text-gray-300 max-w-none">
                 <p className="text-xl leading-relaxed mb-6">
-                  My mission is to <span className="text-blue-400 font-semibold">break the bounds of ignorance</span>  I build bridges between potential and performance using strategic technology and data-driven solutions.
+                  My mission is to <span className="text-blue-400 font-semibold">break the limitations of ignorance</span>  I build bridges between potential and performance using strategic technology and data-driven solutions.
                 </p>
                 
                 <p className="text-xl leading-relaxed mb-6">
