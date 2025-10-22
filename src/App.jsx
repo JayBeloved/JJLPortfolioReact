@@ -7,7 +7,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Services from './components/Services'
-import Projects from './components/Projects'
+import IdeasSection from './components/Projects' // Renamed for clarity
 import BlogPreview from './components/BlogPreview'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -31,7 +31,7 @@ const App = () => {
           <Hero />
           <About />
           <Services />
-          <Projects />
+          <IdeasSection />
           <BlogPreview />
           <Contact />
           <Footer />
