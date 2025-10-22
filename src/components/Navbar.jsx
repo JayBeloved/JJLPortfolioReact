@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo and Brand Name */}
-          <div className="flex items-center space-x-3">
+          <a href="https://tech.johnjaylawal.site" className="flex items-center space-x-3">
             <Logo 
               type="load" 
               className="h-12 w-auto"
@@ -54,7 +54,7 @@ const Navbar = () => {
                 Technology | Education | Leadership
               </span>
             </div>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
