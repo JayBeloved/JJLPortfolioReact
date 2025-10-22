@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import crane from '../assets/img/portfolio/crane.png'
-import sps from '../assets/img/portfolio/smartpayslip.png'
-import andl from '../assets/img/portfolio/andl.png'
-import delegates from '../assets/img/portfolio/delegates.png'
-import uncaved from '../assets/img/portfolio/uncaved.png'
+import techImage from '../assets/img/portfolio/techImage.png'
+import leadImage from '../assets/img/portfolio/leadImage.png'
+import eduImage from '../assets/img/portfolio/eduImage.png'
 
 const IdeasSection = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -30,27 +28,27 @@ const IdeasSection = () => {
     {
       title: "10xb Platform",
       description: "An integrated ecosystem delivering immense value through technology, education, and leadership content, resources, and micro-apps.",
-      image: crane
+      image: techImage
     },
     {
       title: "NaijaGrad Talent Pool",
       description: "A professional platform connecting fresh Nigerian graduates with recruiters and organizations, featuring AI-powered profile optimization.",
-      image: delegates
+      image: techImage
     },
     {
       title: "SME Solutions Hub",
       description: "A curated library of ready-to-use resources, templates, toolkits, and micro-apps designed to solve specific business problems for SMEs.",
-      image: sps
+      image: techImage
     },
     {
       title: "Training & Mentorship",
       description: "Structured learning paths, case studies, and a platform that provides a pathway to mentorship opportunities for aspiring tech professionals.",
-      image: andl
+      image: leadImage
     },
     {
       title: "Writing & Blog",
       description: "A collection of curated, high-quality content and articles on technology, productivity, leadership, and personal development.",
-      image: uncaved
+      image: eduImage
     }
   ]
 
