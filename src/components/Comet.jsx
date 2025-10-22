@@ -14,8 +14,7 @@ const CometPage = () => {
   const studentProLink = "https://plex.it/referrals/48I92GMP";
   const cometProLink = "https://perplexity.ai/browser/claim-invite/ODNkMjZiM2UtNGRiZS00NWJmLWJiMTctYjdlOGM4ZGJmZDI2";
   const pitchDeckLink = "https://pitch.com/v/jjl-comet-pro-rqhu93";
-  const videoLink1 = "https://drive.google.com/file/d/1KIUtdzw9nCK390gaoH71yLGxrUnivxtU/view?usp=sharing";
-  const videoLink2 = "https://drive.google.com/file/d/1grPC_yJ1Xbd4meDqoF27pQulXTXHIc0R/view?usp=sharing";
+
   
 
   const useCases = {
@@ -53,11 +52,16 @@ const CometPage = () => {
             Unlock Comet for Students 
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-          Free & Premium AI Tools Designed for Your Academic Success!
+          Get Premium AI Tools for Free - Designed for Your Academic Success!
           </p>
-          <a href={studentProLink} target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-8 py-4 rounded-sm font-bold text-xl hover:bg-blue-700 transition-colors">
-            Get Perplexity Pro
-          </a>
+          <div className="flex flex-col md:flex-row gap-6 justify-center">
+            <a href={studentProLink} target="_blank" rel="noopener noreferrer" className="bg-white text-gray-900 px-8 py-3 rounded-lg font-bold text-lg hover:bg-gray-200 transition-colors">
+              Get Perplexity Pro (mobile and web)
+            </a>
+            <a href={cometProLink} target="_blank" rel="noopener noreferrer" className="bg-purple-700 text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-purple-800 transition-colors">
+              Get Comet Pro (PC ONlY)
+            </a>
+          </div>
         </div>
       </section>
 
@@ -117,7 +121,7 @@ const CometPage = () => {
         </section>
         
         {/* Video Section */}
-        <section id="comet-videos" className="mb-24">
+        {/* <section id="comet-videos" className="mb-24">
             <h2 className="text-4xl lg:text-5xl font-bold text-white text-center mb-16">See Comet in Action</h2>
             <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-gray-800/50 rounded-2xl p-8 border border-gray-700/50">
@@ -135,7 +139,7 @@ const CometPage = () => {
                     </video>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         {/* Pitch Deck Section */}
         <section id="pitch-deck" className="mb-24">
@@ -158,10 +162,10 @@ const CometPage = () => {
           </p>
           <div className="flex flex-col md:flex-row gap-6 justify-center">
             <a href={studentProLink} target="_blank" rel="noopener noreferrer" className="bg-white text-gray-900 px-8 py-3 rounded-lg font-bold text-lg hover:bg-gray-200 transition-colors">
-              Get Perplexity Pro (for Students)
+            Get Perplexity Pro (mobile and web)
             </a>
             <a href={cometProLink} target="_blank" rel="noopener noreferrer" className="bg-purple-700 text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-purple-800 transition-colors">
-              Get Comet Pro (Free) PC ONlY
+            Get Comet Pro (PC ONlY)
             </a>
           </div>
         </section>
