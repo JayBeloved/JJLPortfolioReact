@@ -14,9 +14,9 @@ const CometPage = () => {
   const studentProLink = "https://plex.it/referrals/48I92GMP";
   const cometProLink = "https://perplexity.ai/browser/claim-invite/ODNkMjZiM2UtNGRiZS00NWJmLWJiMTctYjdlOGM4ZGJmZDI2";
   const pitchDeckLink = "https://pitch.com/v/jjl-comet-pro-rqhu93";
-  const videoLink1 = "https://drive.google.com/file/d/1KIUtdzw9nCK390gaoH71yLGxrUnivxtU/view";
-  const videoLink2 = "https://drive.google.com/file/d/1grPC_yJ1Xbd4meDqoF27pQulXTXHIc0R/view";
-
+  const videoLink1 = "https://drive.google.com/file/d/1KIUtdzw9nCK390gaoH71yLGxrUnivxtU/view?usp=sharing";
+  const videoLink2 = "https://drive.google.com/file/d/1grPC_yJ1Xbd4meDqoF27pQulXTXHIc0R/view?usp=sharing";
+  
 
   const useCases = {
     academics: [
@@ -161,7 +161,7 @@ const CometPage = () => {
               Get Perplexity Pro (for Students)
             </a>
             <a href={cometProLink} target="_blank" rel="noopener noreferrer" className="bg-purple-700 text-white px-8 py-3 rounded-lg font-bold text-lg hover:bg-purple-800 transition-colors">
-              Get Comet Pro (Free)
+              Get Comet Pro (Free) PC ONlY
             </a>
           </div>
         </section>
