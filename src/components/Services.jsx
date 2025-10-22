@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import techImage from '../assets/img/portfolio/crane.png';
-import leadImage from '../assets/img/portfolio/delegates.png';
-import eduImage from '../assets/img/portfolio/andl.png';
+import techImage from '../assets/img/portfolio/techImage.png';
+import leadImage from '../assets/img/portfolio/leadImage.png';
+import eduImage from '../assets/img/portfolio/eduImage.png';
 
 const Services = () => {
   const [isVisible, setIsVisible] = useState(false)
