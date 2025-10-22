@@ -56,7 +56,7 @@ const CometPage = () => {
           Free & Premium AI Tools Designed for Your Academic Success!
           </p>
           <a href={studentProLink} target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-8 py-4 rounded-sm font-bold text-xl hover:bg-blue-700 transition-colors">
-            Sign up with your .edu.ng email
+            Get Perplexity Pro
           </a>
         </div>
       </section>
