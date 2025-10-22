@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import profile from "../assets/img/profile3.jpg" 
+import profile from "../assets/img/profile.jpg" 
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -45,15 +45,15 @@ const About = () => {
             }`}>
               <div className="prose prose-lg text-gray-300 max-w-none">
                 <p className="text-xl leading-relaxed mb-6">
-                  My mission is to <span className="text-blue-400 font-semibold">break the bounds of ignorance</span>  I build bridges between potential and performance using strategic technology and data-driven solutions.
+                  I specialize in building bridges between potential and performance through <span className="text-blue-400 font-semibold">strategic technology and data-driven solutions</span>. My focus is on leveraging technology to drive productivity and profitability.
                 </p>
                 
                 <p className="text-xl leading-relaxed mb-6">
-                  From my base in Abuja, Nigeria, I operate on three core pillars: delivering impactful <span className="text-blue-400">Words</span> through thought leadership, producing measurable <span className="text-blue-400">Results</span> through innovative solutions, and providing dedicated <span className="text-blue-400">Service</span> to communities and organizations.
+                  Based in Abuja, Nigeria, my work revolves around three core pillars: <span className="text-blue-400">Full Stack Web Development</span>, creating robust and scalable web applications; <span className="text-blue-400">Data Analytics Engineering</span>, turning data into actionable insights; and crafting <span className="text-blue-400">Business Solutions</span> for SMEs and freelancers.
                 </p>
 
                 <p className="text-xl leading-relaxed mb-8">
-                  I partner with businesses and individuals to transform their operations, empowering them to enhance productivity and drive profitability through custom software development, comprehensive data analysis, and strategic IT consulting.
+                  I partner with businesses and individuals to transform their operations, empowering them to enhance productivity and drive profitability through custom software development, comprehensive data analysis, and strategic IT consulting. I also enjoy exploring and showcasing the potential of new technologies and platforms.
                 </p>
 
                 {/* Mission Stats */}

@@ -1,8 +1,13 @@
+
 import React, { useState, useEffect } from 'react'
 import crane from '../assets/img/portfolio/crane.png'
 import sps from '../assets/img/portfolio/smartpayslip.png'
 import andl from '../assets/img/portfolio/andl.png'
 import delegates from '../assets/img/portfolio/delegates.png'
+import uncaved from '../assets/img/portfolio/uncaved.png'
+import tms from '../assets/img/portfolio/tms.jpg'
+import cares from '../assets/img/portfolio/cares.png'
+import bg1 from '../assets/img/portfolio/bg_1.png'
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -28,76 +33,82 @@ const Projects = () => {
 
   const projects = [
     {
-      id: 1,
-      title: "Crane JLA Consults",
-      category: "Business Consulting",
-      description: "CEO & Lead Consultant. Driving growth through data-driven research and strategic consulting.",
-      longDescription: "As CEO and Lead Consultant of Crane JLA Consults, I drive organizational growth through comprehensive data-driven research and strategic consulting. Currently developing a proprietary web application that will revolutionize academic data generation, making research more accessible and efficient for educational institutions.",
-      image: crane,
-      technologies: ["Python", "Django", "Data Analytics", "Business Intelligence", "SPSS", "EViews", "SmartPLS"],
-      features: [
-        "Strategic Business Consulting",
-        "Data-Driven Research Solutions",
-        "Proprietary Academic Web App",
-        "Growth Strategy Implementation"
-      ],
-      status: "Active",
-      link: "#",
-      github: "#"
+        id: 1,
+        title: "RUIMUN Conference Management System",
+        category: "Full Stack Web Application",
+        description: "An all-in-one platform to manage International Model United Nations conferences, streamlining everything from delegate registration to reporting.",
+        longDescription: "The RUIMUN Conference Management System is a comprehensive, full-stack web application designed to digitize and simplify the complexities of organizing Model UN events. It provides a centralized hub for officials to manage delegate applications, assign countries and committees, and communicate updates. Delegates can register, view their assignments, and access conference materials seamlessly. The platform includes a powerful dashboard with reporting features to give organizers a real-time overview of the event's status.",
+        image: delegates,
+        technologies: ["React", "Django", "PostgreSQL", "DigitalOcean"],
+        features: ["Delegate & Official Management", "Committee & Country Assignment", "Real-time Analytics Dashboard", "Automated Communication System"],
+        status: "In Progress",
+        link: "#",
+        github: "#"
     },
     {
-      id: 2,
-      title: "SmartPay Slip",
-      category: "Finance & Payroll",
-      description: "Automated payroll management system with integrated tax calculations and financial reporting capabilities.",
-      longDescription: "Automated payroll management system with integrated tax calculations and financial reporting capabilities. Built for a seamless payroll experience, ensuring accuracy and compliance for businesses of all sizes.",
-      image: sps,
-      technologies: ["Boostrap", "Django", "PostgreSQL", "DigitalOcean"],
-      features: [
-        "Employee Payroll Management",
-        "Automated Tax Calculations",
-        "Financial Reporting Tools",
-        "User-Friendly Interface"
-      ],
-      status: "Ongoing",
-      link: "https://smartpayslip.online",
-      github: "#"
+        id: 2,
+        title: "Apostle Niyi Digital Library",
+        category: "Full Stack Web Application",
+        description: "A feature-rich CMS and digital library with dynamic content generation and resource management.",
+        longDescription: "This application serves as a digital repository for motivational and spiritual content, featuring a custom-built Content Management System (CMS) for easy administration. Key features include a blog, a system for generating shareable quote images, and a library of downloadable resources. The platform is equipped with advanced search and filtering capabilities, allowing users to easily discover and access content.",
+        image: andl,
+        technologies: ["HTML", "CSS", "JavaScript", "Django", "Tailwind", "PostgreSQL", "DigitalOcean"],
+        features: ["Custom CMS & Analytics", "Dynamic Quote Image Generation", "Searchable Resource Library", "Blog & Content Platform"],
+        status: "Completed",
+        link: "#",
+        github: "#"
     },
     {
-      id: 3,
-      title: "RUIMUN Delegates Management System (DMS)",
-      category: "Saas Platform",
-      description: "Event management solution for handling delegate registrations, assignments, and conference attendance.",
-      longDescription: "Event management solution for handling delegate registrations, assignments, and conference attendance. ",
-      image: delegates,
-      technologies: ["Bootstrap", "Django", "PostgreSQL", "DigitalOcean"],
-      features: [
-        "Delegate Registration & Management",
-        "Delegates Database Management",
-        "Committee Assignments",
-        "Payment Verification System"
-      ],
-      status: "Beta",
-      link: "#",
-      github: "#"
+        id: 3,
+        title: "SmartPaySlip",
+        category: "FinTech Web Application",
+        description: "An intuitive and transparent system for calculating, distributing, and managing employee payslips.",
+        longDescription: "SmartPaySlip is a web application designed to bring clarity and efficiency to the payroll process. It automates the calculation of salaries, taxes, and deductions, generating clear and easy-to-understand payslips. The system provides a secure portal for both employers to manage payroll and for employees to access their payment history, fostering transparency and reducing administrative overhead.",
+        image: sps,
+        technologies: ["HTML", "CSS", "JavaScript", "Django", "Bootstrap", "PostgreSQL", "DigitalOcean"],
+        features: ["Automated Payslip Calculation", "Secure Employee Portal", "Payroll History & Reporting", "Transparent Deductions & Taxes"],
+        status: "Completed",
+        link: "#",
+        github: "#"
     },
     {
-      id: 4,
-      title: "Apostle Niyi Digital Library",
-      category: "Community Service",
-      description: "Commitment to service through ICT leadership and digital library support.",
-      longDescription: "Demonstrating my commitment to service and community impact through various leadership roles including development and providing technical support for the Apostle Niyi Digital Library, fostering educational advancement and technological literacy.",
-      image: andl,
-      technologies: ["Digital Strategy", "IT Infrastructure", "Project Management"],
-      features: [
-        "CMS Development & Maintenance",
-        "IT Infrastructure Support",
-        "Web Development",
-        "Content Management"
-      ],
-      status: "Beta",
-      link: "https://niyimakinde.com",
-      github: "#"
+        id: 4,
+        title: "NaijaGrad Talent Pool",
+        category: "Web Platform",
+        description: "A professional networking platform connecting fresh Nigerian graduates with recruiters and organizations.",
+        longDescription: "NaijaGrad is a talent discovery platform designed to bridge the gap between Nigerian graduates and the job market. It empowers graduates to create detailed professional profiles, build a web presence, and showcase their skills. For recruiters, NaijaGrad serves as a curated talent pool with advanced search and filtering capabilities. Future plans include AI-powered SEO for profiles and API integrations with major job portals.",
+        image: bg1,
+        technologies: ["React", "Django", "PostgreSQL", "DigitalOcean", "AI/ML"],
+        features: ["Graduate Profile Builder", "Recruiter Search & Filter", "AI-Powered SEO Optimization", "Job Board API Integration"],
+        status: "In Progress",
+        link: "#",
+        github: "#"
+    },
+    {
+        id: 5,
+        title: "Sympleefied",
+        category: "AI & SaaS",
+        description: "An AI-powered content adaptation tool that allows readers to choose how they consume articles and blog posts.",
+        longDescription: "Sympleefied is an innovative SaaS platform that uses AI to transform a single piece of content into multiple formats (e.g., long-form, summary, bullet points). This allows website visitors to select their preferred reading style, dramatically increasing engagement and accessibility. The underlying AI is trained on general writing and creativity principles, ensuring high-quality output for any article or blog.",
+        image: tms,
+        technologies: ["React", "Python (AI/ML)", "Django", "SaaS Architecture"],
+        features: ["AI-Driven Content Summarization", "Multiple Reading Mode Generation", "Seamless Website Integration", "User-Centric Reading Experience"],
+        status: "In Progress",
+        link: "#",
+        github: "#"
+    },
+    {
+        id: 6,
+        title: "10xb: The Integrated Value Platform",
+        category: "Personal Brand Ecosystem",
+        description: "A digital ecosystem designed to deliver immense value through technology, education, and leadership content.",
+        longDescription: "10xb is the digital embodiment of the John J. Lawal personal brand. It's an integrated platform that serves curated content, structured learning paths, and practical resources to four key audiences: personal development seekers, SMEs, students, and institutions. The platform features a rich library of toolkits, templates, micro-apps, and courses designed to solve specific problems and foster growth.",
+        image: cares,
+        technologies: ["React", "Django", "Next.js", "Headless CMS", "LMS Integration"],
+        features: ["Curated Learning Paths", "SME Resource Library & Toolkits", "Micro-app & Template Marketplace", "Expertise Showcase for Institutions"],
+        status: "In Progress",
+        link: "#",
+        github: "#"
     }
   ]
 
@@ -128,8 +139,8 @@ const Projects = () => {
               <span className="px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-sm">{project.category}</span>
               <span className={`px-3 py-1 rounded-full text-sm ${
                 project.status === 'Active' ? 'bg-green-500/20 text-green-400' :
-                project.status === 'In Development' ? 'bg-yellow-500/20 text-yellow-400' :
-                project.status === 'Beta' ? 'bg-purple-500/20 text-purple-400' :
+                project.status === 'In Progress' ? 'bg-yellow-500/20 text-yellow-400' :
+                project.status === 'Completed' ? 'bg-purple-500/20 text-purple-400' :
                 'bg-blue-500/20 text-blue-400'
               }`}>
                 {project.status}
@@ -165,12 +176,12 @@ const Projects = () => {
             </div>
             
             <div className="flex gap-4">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
                 View Project
-              </button>
-              <button className="border border-gray-600 hover:border-gray-500 text-gray-300 px-6 py-3 rounded-lg font-medium transition-colors">
+              </a>
+              <a href={project.github} target="_blank" rel="noopener noreferrer" className="border border-gray-600 hover:border-gray-500 text-gray-300 px-6 py-3 rounded-lg font-medium transition-colors">
                 View Code
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -197,7 +208,7 @@ const Projects = () => {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <div
                 key={project.id}
@@ -218,8 +229,8 @@ const Projects = () => {
                   <div className="absolute top-4 right-4">
                     <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                       project.status === 'Active' ? 'bg-green-500/90 text-white' :
-                      project.status === 'In Development' ? 'bg-yellow-500/90 text-white' :
-                      project.status === 'Beta' ? 'bg-purple-500/90 text-white' :
+                      project.status === 'In Progress' ? 'bg-yellow-500/90 text-white' :
+                      project.status === 'Completed' ? 'bg-purple-500/90 text-white' :
                       'bg-blue-500/90 text-white'
                     }`}>
                       {project.status}
@@ -237,7 +248,7 @@ const Projects = () => {
                     {project.title}
                   </h3>
                   
-                  <p className="text-gray-400 mb-4 leading-relaxed">
+                  <p className="text-gray-400 mb-4 leading-relaxed h-24 overflow-hidden">
                     {project.description}
                   </p>
 

@@ -29,22 +29,6 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900/80 to-black opacity-95"></div>
         </div>
 
-        {/* Floating Elements */}
-      {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(5)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-2 h-2 bg-blue-400/20 rounded-full animate-pulse"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${3 + Math.random() * 2}s`
-            }}
-          />
-        ))}
-      </div> */}
-
       <div className="container mx-auto px-4 lg:px-8 text-center z-10">
         <div className={`max-w-5xl mx-auto transition-all duration-1000 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
@@ -54,10 +38,10 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             <span className="block">John J. Lawal:</span>
             <span className="block bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">
-              Building the Future
+              Engineering Digital Solutions
             </span>
             <span className="block text-gray-300 text-3xl md:text-5xl lg:text-6xl mt-2">
-              with Data, Technology, and Purpose
+              for Productivity and Profit
             </span>
           </h1>
 
@@ -65,7 +49,7 @@ const Hero = () => {
           <p className={`text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
-            Tech Consultant | Data Driven Solutions Expert | Software Engineer
+            Full Stack Developer | Data Engineer | Business Solutions Architect
           </p>
 
           {/* CTA Buttons */}
@@ -91,7 +75,7 @@ const Hero = () => {
           </div>
 
           {/* Scroll Indicator */}
-          <div className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-700 ${
+          {/* <div className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-700 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <div className="animate-bounce">
@@ -99,7 +83,7 @@ const Hero = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
               </svg>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

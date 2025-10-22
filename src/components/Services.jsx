@@ -25,12 +25,12 @@ const Services = () => {
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
         </svg>
       ),
-      title: "Strategic Tech Consulting",
-      description: "Helping businesses and individuals leverage technology for productivity and growth through comprehensive analysis and strategic planning.",
-      features: ["Technology Audits", "Digital Transformation", "Process Optimization", "Strategic Planning"]
+      title: "Full Stack Web Development",
+      description: "Creating robust, scalable, and high-performance web applications from front-end to back-end.",
+      features: ["React & Modern Frameworks", "API Development & Integration", "Cloud-Native Solutions", "E-commerce & CMS"]
     },
     {
       icon: (
@@ -38,29 +38,29 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
         </svg>
       ),
-      title: "Data & Analytics Engineering",
-      description: "Designing and building systems that turn raw data into actionable insights for informed decision-making.",
-      features: ["Data Pipeline Design", "Business Intelligence", "Predictive Analytics", "Data Visualization"]
+      title: "Data Analytics Engineering",
+      description: "Building systems to transform raw data into actionable insights, enabling data-driven decision-making.",
+      features: ["ETL & Data Pipelines", "Business Intelligence Dashboards", "Data Warehousing", "Predictive Modeling"]
     },
     {
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
         </svg>
       ),
-      title: "Custom Software Development",
-      description: "Creating robust web applications and solutions using modern technologies like Django, React, and cloud platforms.",
-      features: ["Web Applications", "API Development", "Cloud Solutions", "Mobile-Responsive Design"]
+      title: "Lightweight Business Solutions",
+      description: "Developing cost-effective and efficient software solutions tailored for SMEs and freelancers to boost productivity.",
+      features: ["Custom CRM/ERP modules", "Process Automation Tools", "Low-Code/No-Code Solutions", "Productivity Templates"]
     },
     {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-      ),
-      title: "Leadership & Mentorship",
-      description: "Developing the next generation of leaders in technology and life through mentorship and educational initiatives.",
-      features: ["Team Leadership", "Technical Mentoring", "Educational Programs", "Community Building"]
+        icon: (
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547a2 2 0 00-.547 1.806l.477 2.387a6 6 0 00.517 3.86l.158.318a6 6 0 00.517 3.86l.477 2.387a2 2 0 001.806.547a2 2 0 001.806-.547l2.387-.477a6 6 0 003.86-.517l.318-.158a6 6 0 013.86-.517l2.387.477a2 2 0 001.806-.547a2 2 0 00.547-1.806l-.477-2.387a6 6 0 00-.517-3.86l-.158-.318a6 6 0 00-.517-3.86l-.477-2.387zM12 18a6 6 0 100-12 6 6 0 000 12z"/>
+            </svg>
+        ),
+        title: "Technology & Platform Expertise",
+        description: "Exploring, testing, and mastering emerging technologies to provide cutting-edge solutions and expert guidance.",
+        features: ["New Technology Prototyping", "Platform Integration (Firebase, Astra)", "Plugin & Add-on Development", "Tech Stack Consulting"]
     }
   ]
 
@@ -74,7 +74,7 @@ const Services = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              My <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Expertise</span>
+              Tech for <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Productivity & Profit</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               Delivering exceptional value through strategic technology solutions and innovative approaches
