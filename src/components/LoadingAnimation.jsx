@@ -3,25 +3,22 @@ import Logo from './logo'
 
 const LoadingAnimation = ({ onComplete }) => {
   const [animationStage, setAnimationStage] = useState('spin') // 'spin', 'explode', 'fade'
-  const [particles, setParticles] = useState([])
+  const [particles, setParticles] = useState([]);
 
   useEffect(() => {
-    // Spin for 2 seconds
-    const spinTimer = setTimeout(() => setAnimationStage('pulse'), 1000);
+    // Immediately pulse
+    setAnimationStage('pulse');
 
     // Pulse and generate particles
-    const pulseTimer = setTimeout(() => {
-      setAnimationStage('explode')
+    const explodeTimer = setTimeout(() => {
+      setAnimationStage('explode');
       // Generate more particles exploding outwards
-      const newParticles = Array.from({ length: 50 }).map(() => ({
-        id: Math.random(),
-        x: 50, y: 50,
-        angle: Math.random() * 360,
-        distance: Math.random() * 150 + 50,
-        delay: Math.random() * 0.8,
-      }));
-      setParticles(newParticles);
-    }, 3000); // Start pulse/explode after 3 seconds
+      const newParticles = Array.from({ length: 50 }).map(() => ({ id: Math.random(), x: 50, y: 50, angle: Math.random() * 360, distance: Math.random() * 150 + 50, delay: Math.random() * 0.8, })); setParticles(newParticles);
+    }, 1000); // Start explode after 1 second (after initial pulse)
+
+
+
+
 
     // After explosion/particles, fade out
     const fadeTimer = setTimeout(() => setAnimationStage('fade'), 4500); // Start fade after 4.5 seconds
@@ -29,7 +26,7 @@ const LoadingAnimation = ({ onComplete }) => {
     // After fade, call onComplete
     const completeTimer = setTimeout(onComplete, 5500); // Call onComplete after 5.5 seconds
 
-    return () => { clearTimeout(spinTimer); clearTimeout(pulseTimer); clearTimeout(fadeTimer); clearTimeout(completeTimer); };
+    return () => { clearTimeout(explodeTimer); clearTimeout(fadeTimer); clearTimeout(completeTimer); };
   }, [onComplete]);
 
   return (
