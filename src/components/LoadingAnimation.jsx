@@ -6,25 +6,27 @@ const LoadingAnimation = ({ onComplete }) => {
   const [particles, setParticles] = useState([]);
 
   useEffect(() => {
-    // Immediately pulse
+    // Start with pulse
     setAnimationStage('pulse');
 
-    // Pulse and generate particles
+    // After pulses, explode and generate particles
     const explodeTimer = setTimeout(() => {
       setAnimationStage('explode');
       // Generate more particles exploding outwards
       const newParticles = Array.from({ length: 50 }).map(() => ({ id: Math.random(), x: 50, y: 50, angle: Math.random() * 360, distance: Math.random() * 150 + 50, delay: Math.random() * 0.8, })); setParticles(newParticles);
-    }, 1000); // Start explode after 1 second (after initial pulse)
-
-
-
-
+    }, 3000); // Start explode after 3 seconds (allowing for ~3 pulses)
 
     // After explosion/particles, fade out
     const fadeTimer = setTimeout(() => setAnimationStage('fade'), 4500); // Start fade after 4.5 seconds
 
     // After fade, call onComplete
-    const completeTimer = setTimeout(onComplete, 5500); // Call onComplete after 5.5 seconds
+    const completeTimer = setTimeout(onComplete, 5000); // Call onComplete after 5.5 seconds
+
+    // Note: The 'animate-pulse' class in TailwindCSS typically runs infinitely.
+    // The pulse timing is implicitly handled by the CSS animation duration.
+    // We transition from 'pulse' to 'explode' after a set time, simulating the end of the pulses.
+    // The 3000ms delay for the 'explodeTimer' allows for a few pulse cycles with a default Tailwind pulse animation (which is 1 second).
+
 
     return () => { clearTimeout(explodeTimer); clearTimeout(fadeTimer); clearTimeout(completeTimer); };
   }, [onComplete]);
