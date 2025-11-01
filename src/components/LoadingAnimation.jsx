@@ -3,55 +3,69 @@ import Logo from './logo'
 
 const LoadingAnimation = ({ onComplete }) => {
   const [animationStage, setAnimationStage] = useState('spin') // 'spin', 'explode', 'fade'
+  const [particles, setParticles] = useState([]);
 
   useEffect(() => {
-    // After 2 seconds, start explosion
-    const spinTimer = setTimeout(() => {
-      setAnimationStage('explode')
-    }, 3000)
+    // Start with pulse
+    setAnimationStage('pulse');
 
-    // After explosion, fade out and call onComplete
+    // After pulses, explode and generate particles
     const explodeTimer = setTimeout(() => {
-      setAnimationStage('fade')
-      setTimeout(onComplete, 500) // Give time for fade animation
-    }, 3000)
+      setAnimationStage('explode');
+      // Generate more particles exploding outwards
+      const newParticles = Array.from({ length: 50 }).map(() => ({ id: Math.random(), x: 50, y: 50, angle: Math.random() * 360, distance: Math.random() * 150 + 50, delay: Math.random() * 0.8, })); setParticles(newParticles);
+    }, 3000); // Start explode after 3 seconds (allowing for ~3 pulses)
 
-    return () => {
-      clearTimeout(spinTimer)
-      clearTimeout(explodeTimer)
-    }
-  }, [onComplete])
+    // After explosion/particles, fade out
+    const fadeTimer = setTimeout(() => setAnimationStage('fade'), 4500); // Start fade after 4.5 seconds
+
+    // After fade, call onComplete
+    const completeTimer = setTimeout(onComplete, 5000); // Call onComplete after 5.5 seconds
+
+    // Note: The 'animate-pulse' class in TailwindCSS typically runs infinitely.
+    // The pulse timing is implicitly handled by the CSS animation duration.
+    // We transition from 'pulse' to 'explode' after a set time, simulating the end of the pulses.
+    // The 3000ms delay for the 'explodeTimer' allows for a few pulse cycles with a default Tailwind pulse animation (which is 1 second).
+
+
+    return () => { clearTimeout(explodeTimer); clearTimeout(fadeTimer); clearTimeout(completeTimer); };
+  }, [onComplete]);
 
   return (
     <div className="fixed inset-0 bg-black z-50 flex items-center justify-center">
-      <div className={`transition-all duration-500 ${
-        animationStage === 'spin' ? 'animate-spin' :
-        animationStage === 'explode' ? 'animate-pulse scale-110' :
-        'opacity-0 scale-150'
-      }`}>
-        <Logo 
-          type="load" 
-          className="w-32 h-32 md:w-48 md:h-48" 
-          alt="John J. Lawal Loading"
-        />
-      </div>
-      
-      {/* Particle effect overlay for explosion */}
-      {animationStage === 'explode' && (
-        <div className="absolute inset-0 pointer-events-none">
-          {[...Array(20)].map((_, i) => (
+      <div className={`transition-opacity duration-500 ${animationStage === 'fade' ? 'opacity-0' : 'opacity-100'}`}>
+        <div className={`transition-transform duration-1000 ease-out ${
+          animationStage === 'spin' ? 'animate-spin' :
+          animationStage === 'pulse' ? 'animate-pulse scale-105' :
+          animationStage === 'explode' ? 'scale-120' : // Hold scale during particle explosion
+          'scale-100' // Default
+        }`}>
+          <Logo
+            type="load"
+            className="w-32 h-32 md:w-48 md:h-48"
+            alt="John J. Lawal Loading"
+          />
+        </div>
+
+        {/* Particle effect overlay for explosion */}
+        {animationStage === 'explode' && (
+          <div className="absolute inset-0 pointer-events-none">
+            {particles.map((particle) => (
             <div
-              key={i}
-              className="absolute w-2 h-2 bg-blue-400 rounded-full animate-ping"
+              key={particle.id}
+              className="absolute w-1.5 h-1.5 bg-white rounded-full"
               style={{
-                left: `${50 + (Math.random() - 0.5) * 60}%`,
-                top: `${50 + (Math.random() - 0.5) * 60}%`,
-                animationDelay: `${Math.random() * 0.5}s`
+                left: '50%',
+                top: '50%',
+                transform: `translate(-50%, -50%) rotate(${particle.angle}deg) translateX(${particle.distance}px)`,
+                transition: `transform 1.5s ease-out ${particle.delay}s, opacity 1s ease-out ${particle.delay}s`,
+                opacity: 0,
               }}
             />
           ))}
         </div>
       )}
+      </div>
     </div>
   )
 }
