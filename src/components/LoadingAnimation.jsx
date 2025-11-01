@@ -7,7 +7,7 @@ const LoadingAnimation = ({ onComplete }) => {
 
   useEffect(() => {
     // Spin for 2 seconds
-    const spinTimer = setTimeout(() => setAnimationStage('pulse'), 2000);
+    const spinTimer = setTimeout(() => setAnimationStage('pulse'), 1000);
 
     // Pulse and generate particles
     const pulseTimer = setTimeout(() => {
