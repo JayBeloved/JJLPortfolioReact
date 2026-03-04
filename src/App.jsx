@@ -4,6 +4,7 @@ import './App.css';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Comet from './pages/Comet';
+import OnboardingPage from './pages/OnboardingPage';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="comet" element={<Comet />} />
+          <Route path="onboarding" element={<OnboardingPage />} />
         </Route>
       </Routes>
     </Router>
